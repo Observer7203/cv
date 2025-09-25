@@ -1,6 +1,8 @@
 # CV
 # Kamidenov Sanzhar Muratuly
 
+![Profile Photo](assets/photo.png)
+
 ---
 
 ## Contact Information
