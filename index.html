@@ -32,6 +32,11 @@
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="lang-switch" style="display:inline-flex;align-items:center;gap:7px;margin-left:20px;font-size:0.9rem;font-weight:600;">
+                  <a href="index.html" style="color:#2b6cb0;text-decoration:none;">EN</a>
+                  <span style="color:#cbd5e0;">|</span>
+                  <a href="ru.html" style="color:#a0aec0;text-decoration:none;">RU</a>
+                </div>
                 <button class="menu-toggle" aria-label="Open menu">☰</button>
             </nav>
         </div>
@@ -338,7 +343,7 @@
 
     <script>
             // Copy code
-        document.querySelector(".copy-btn").addEventListener("click", () => {
+        var _cb = document.querySelector(".copy-btn"); if (_cb) _cb.addEventListener("click", () => {
         const code = document.getElementById("code-snippet").innerText;
         navigator.clipboard.writeText(code);
         alert("Code copied!");
