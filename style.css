@@ -276,6 +276,13 @@ main {
     text-decoration: underline;
 }
 
+.achievement-body a svg {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
 @media (max-width: 600px) {
     .achievement-banner {
         width: 100%;
