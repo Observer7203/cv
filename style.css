@@ -214,6 +214,65 @@ main {
     border-bottom: none;
 }
 
+/* Achievements & Recognition */
+.achievement {
+    display: flex;
+    gap: 1.75rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.achievement-banner {
+    flex: 0 0 auto;
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.achievement-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.18);
+}
+
+.achievement-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.achievement-body {
+    flex: 1 1 320px;
+}
+
+.achievement-body h3 {
+    color: #1a202c;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.achievement-body p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.achievement-body a {
+    color: #2d3748;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .achievement-banner {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}
+
 .section h2 {
     color: #1a202c;
     font-size: 1.5rem;
